@@ -3,7 +3,6 @@
 build
 dist
 cluster.yaml
-docs
 *coverage*
 .*
 !.gitlab-ci.yml
