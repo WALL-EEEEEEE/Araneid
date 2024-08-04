@@ -1,0 +1,17 @@
+*__pycache__
+*.egg-info
+build
+dist
+cluster.yaml
+docs
+*coverage*
+.*
+!.gitlab-ci.yml
+!.gitignore
+**report.xml
+poetry.lock
+scalence
+test-reports
+pip-wheel-metadata
+*.png
+

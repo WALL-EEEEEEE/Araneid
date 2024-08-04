@@ -1,0 +1,50 @@
+[build-system]
+requires = [ "setuptools >= 35.0.2", "wheel >= 0.29.0"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+markers = [
+    "slow: marks test as slow",
+    "spider: spider tests",
+    "unittest: basic module unittest"
+]
+testpaths = [
+    "tests",
+]
+#timeout = 3000 #60
+addopts="--ignore-glob='**skip_*' --alluredir=test-reports/allure_results"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py37, py38, py39
+skip_missing_interpreters=True
+isolated_build=True
+toxworkdir={env:TOX_WORKDIR:.tox}
+
+[testenv]
+deps =
+    numpy==1.16
+    pandas==1.0.0
+    asyncmock
+    pytest
+    pygments
+    psutil
+    coverage-badge
+    pytest-cov
+    pytest-timeout
+    aioresponses
+    pytest-asyncio
+    pytest-xprocess
+    allure-pytest
+    pytest-assume
+    openpyxl
+
+install_command=
+    python -m pip install {opts} {packages} 
+pip_pre=True
+commands=
+    pytest -rA -vvv {posargs}
+"""
