@@ -5,7 +5,16 @@ Araneid
 =================
 Features
 =================
-
+.. todolist::
+    .. todo::
+       Supports multiple protocols including short connections (HTTP protocol) and long connections (real-time) (WebSocket, Socket protocol) for data collection.
+    .. todo::
+       Full asyncio support
+    .. todo::
+       Provides a more user-friendly request concurrency control.
+    .. todo::
+       Offers comprehensive and high-performance signal processing support.
+ 
 
 
 
