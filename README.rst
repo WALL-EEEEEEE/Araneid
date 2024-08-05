@@ -1,13 +1,13 @@
 Araneid
 =======
 
-.. image:: https://https://github.com/WALL-EEEEEEE/araneid/badges/master/pipeline.svg
-   :target: https://https://github.com/WALL-EEEEEEE/araneid/-/pipelines
-   :alt: pipeline status
-    
-.. image:: https://https://github.com/WALL-EEEEEEE/araneid/badges/test/coverage.svg
-   :target: https://github.com/WALL-EEEEEEE/araneid/coverage/test
-   :alt: coverage report
+
+=================
+Features
+=================
+
+
+
 
 Doc: **English** **Chinese**
 
