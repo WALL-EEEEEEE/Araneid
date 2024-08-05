@@ -1,6 +1,8 @@
 Araneid
 =======
 
+Doc: **English** **Chinese**
+
 
 =================
 Features
@@ -15,10 +17,6 @@ Features
     .. todo::
        Offers comprehensive and high-performance signal processing support.
  
-
-
-
-Doc: **English** **Chinese**
 
 =================
 Introduction
